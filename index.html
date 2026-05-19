@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Game</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .cricket-game {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #2F578A;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #121358;
+            margin-bottom: 30px;
+        }
+
+        .button-container button {
+            padding: 20px 50px;
+            border-radius: 25px;
+            border: none;
+            margin: 0 15px;
+            background-color: #36ADA3;
+            color: #232F72;
+            font-size: 1.3rem;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #50b1a9;
+            transform: scale(1.04);
+        }
+
+        button:active {
+            transform: scale(0.9);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cricket-game">
+        <h1>Bat Ball Stumps Cricket Game</h1>
+        <div class="button-container">
+            <button class="bat">Bat</button>
+            <button class="ball">Ball</button>
+            <button class="stumps">Stumps</button>
+        </div>
+    </div>
+</body>
+
+</html>
