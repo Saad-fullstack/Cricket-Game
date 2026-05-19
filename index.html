@@ -54,9 +54,84 @@
     <div class="cricket-game">
         <h1>Bat Ball Stumps Cricket Game</h1>
         <div class="button-container">
-            <button class="bat">Bat</button>
-            <button class="ball">Ball</button>
-            <button class="stumps">Stumps</button>
+
+            <!-- =================== Bat section ========================= -->
+
+            <button class="bat" onclick="            
+            let randomNumber = Math.random() * 3; // It generate randon number between 0 - 3 everytime
+            let compChoice;
+
+            if(randomNumber > 0 && randomNumber <= 1) {
+                compChoice = 'Bat';
+            } else if(randomNumber > 1 && randomNumber <= 2) {
+                compChoice = 'Ball'
+            } else {
+                compChoice = 'Stumps';
+            }
+
+            let resultMsg;
+            
+            if(compChoice === 'Bat') {
+                resultMsg = `It's a tie`;
+            } else if(compChoice === 'Ball') {
+                resultMsg = `You won`;
+            } else if(compChoice === 'Stumps') {
+                resultMsg = `Computer has won`;   
+            }
+            
+            alert(`You have chosen Bat\nComputer Choice is ${compChoice}\n${resultMsg}`);
+            
+            ">Bat</button>
+
+            <!-- ====================== Ball Section ================================ -->
+              
+            <button class="ball" onclick="  
+            randomNumber = Math.random() * 3; // It generate randon number between 0 - 3 everytime
+
+            if(randomNumber > 0 && randomNumber <= 1) {
+                compChoice = 'Bat';
+            } else if(randomNumber > 1 && randomNumber <= 2) {
+                compChoice = 'Ball'
+            } else {
+                compChoice = 'Stumps';
+            }
+            
+            if(compChoice === 'Ball') {
+                resultMsg = `It's a tie`;
+            } else if(compChoice === 'Stumps') {
+                resultMsg = `You won`;
+            } else if(compChoice === 'Bat') {
+                resultMsg = `Computer has won`;   
+            }
+            
+            alert(`You have chosen Ball\nComputer Choice is ${compChoice}\n${resultMsg}`);
+            
+            ">Ball</button>
+
+            <!-- ======================== Stumps section -->
+
+            <button class="stumps" onclick="  
+            randomNumber = Math.random() * 3; // It generate randon number between 0 - 3 everytime
+
+            if(randomNumber > 0 && randomNumber <= 1) {
+                compChoice = 'Bat';
+            } else if(randomNumber > 1 && randomNumber <= 2) {
+                compChoice = 'Ball'
+            } else {
+                compChoice = 'Stumps';
+            }
+            
+            if(compChoice === 'Stumps') {
+                resultMsg = `It's a tie`;
+            } else if(compChoice === 'Bat') {
+                resultMsg = `You won`;
+            } else if(compChoice === 'Ball') {
+                resultMsg = `Computer has won`;   
+            }
+            
+            alert(`You have chosen Stumps\nComputer Choice is ${compChoice}\n${resultMsg}`);
+            
+            ">Stumps</button>
         </div>
     </div>
 </body>
